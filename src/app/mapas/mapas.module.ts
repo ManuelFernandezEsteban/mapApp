@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MapasRoutingModule } from './mapas-routing.module';
+
 import { MapScreenComponent } from './pages/map-screen/map-screen.component';
 import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
 
@@ -12,8 +12,12 @@ import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
     ZoomRangeComponent
   ],
   imports: [
-    CommonModule,
-    MapasRoutingModule
+    CommonModule
+    
+  ],
+  exports:[
+    MapScreenComponent
   ]
+
 })
 export class MapasModule { }
